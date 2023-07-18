@@ -25,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  cursor: pointer;
 }
 
 .nav-logo {
@@ -49,7 +50,9 @@ nav {
 
 .nav-menu a {
   text-decoration: none;
-  color: black;
+  color: #3c354f;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .follow-btn {
@@ -66,9 +69,33 @@ nav {
 /* small devices */
 
 @media screen and (max-width: 576px) {
+  nav {
+    box-shadow: none;
+    flex-direction: column;
+    padding: 0;
+    gap: 2.85rem;
+    margin-top: 3rem;
+    justify-content: center;
+  }
+
+  .nav-left {
+    scale: 0.7;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1.5 rem;
+  }
 }
 
 /* medium devices */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+  nav {
+    padding: 0.2rem;
+    scale: 0.8;
+    box-shadow: none;
+    justify-content: space-between;
+    gap: 4rem;
+  }
 }
