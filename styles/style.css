@@ -64,6 +64,92 @@ nav {
   padding: 1.05rem 1.5rem;
 }
 
+/* banner seciton styles */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.25rem;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: url("../images/Group-14.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-right {
+  width: 50%;
+  /* margin-right: 15rem; */
+}
+
+.banner-right img {
+  width: 75%;
+}
+
+.banner-intro {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.banner-title {
+  font-size: 5.9375rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1.5rem;
+}
+
+.banner-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.06rem;
+}
+
+.banner-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.banner-btn {
+  padding-top: 2.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-primary {
+  border-radius: 3rem;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  border: none;
+  padding: 1.3rem 2.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-blue {
+  border-radius: 3rem;
+  background: #4ec5f7;
+  border: none;
+  padding: 1.3rem 2.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* responsive styles */
 
 /* small devices */
@@ -85,6 +171,41 @@ nav {
   .nav-menu {
     flex-direction: column;
     gap: 1.5 rem;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    margin-top: 4.88rem;
+  }
+  .banner-right {
+    width: 100%;
+  }
+
+  .banner-right img {
+    width: 100%;
+  }
+  .banner-left {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .banner-title {
+    scale: 0.8;
+    line-height: normal;
+  }
+  .banner-intro {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  .btn-primary,
+  .btn-blue {
+    padding: 1rem;
   }
 }
 
