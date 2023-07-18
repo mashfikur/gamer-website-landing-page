@@ -262,6 +262,25 @@ nav {
   .btn-blue {
     padding: 1rem;
   }
+
+  .gamer {
+    background: none;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+  }
+
+  .gamer-left,
+  .gamer-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gamer-right {
+    scale: 0.7;
+    margin-top: -2rem;
+  }
 }
 
 /* medium devices */
@@ -290,5 +309,20 @@ nav {
     padding: 2rem 0;
     scale: 0.8;
     margin-top: -1rem;
+  }
+
+  .gamer {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    background: none;
+    padding: 4rem;
+    margin-top: -4rem;
+  }
+
+  .gamer-left,
+  .gamer-right {
+    width: 100%;
+    text-align: center;
   }
 }
