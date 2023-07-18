@@ -252,6 +252,37 @@ nav {
   background-color: darkblue;
 }
 
+/* play section styles */
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 15rem;
+}
+
+.play-left {
+  text-align: right;
+  width: 30%;
+}
+
+.play-right {
+  width: 50%;
+}
+
+.corner-img {
+  position: relative;
+  top: -18rem;
+  left: -11rem;
+}
+
+.play-intro {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
 /* responsive styles */
 
 /* small devices */
@@ -342,6 +373,35 @@ nav {
   .video-card {
     text-align: center;
   }
+
+  .play {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .play-left {
+    width: 100%;
+    text-align: center;
+    scale: 0.7;
+  }
+
+  .play-right {
+    width: 100%;
+    text-align: center;
+    scale: 0.8;
+    margin-top: -5rem;
+  }
+
+  .play-right img {
+    width: 80%;
+  }
+
+  .corner-img {
+    position: relative;
+    top: -14rem;
+    left: -8rem;
+    scale: 0.5;
+  }
 }
 
 /* medium devices */
@@ -396,5 +456,28 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.8rem;
     padding: 2rem;
+  }
+
+  .play {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .play-left {
+    width: 100%;
+    text-align: center;
+    scale: 0.7;
+  }
+
+  .play-right {
+    width: 100%;
+    text-align: center;
+    scale: 0.8;
+    margin-top: -8rem;
+  }
+
+  .corner-img {
+    margin-top: 2rem;
+    margin-left: -10rem;
   }
 }
