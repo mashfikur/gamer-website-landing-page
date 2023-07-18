@@ -1,0 +1,74 @@
+/* imported fonts from google */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* navbar sectin styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.35rem 15rem;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav-logo {
+  color: #0b0223;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.nav-logo span {
+  color: #ff42a5;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.follow-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 1.05rem 1.5rem;
+}
+
+/* responsive styles */
+
+/* small devices */
+
+@media screen and (max-width: 576px) {
+}
+
+/* medium devices */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+}
