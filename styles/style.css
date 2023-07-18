@@ -91,6 +91,7 @@ nav {
 
 .banner-right img {
   width: 75%;
+  vertical-align: bottom;
 }
 
 .banner-intro {
@@ -150,6 +151,59 @@ nav {
   cursor: pointer;
 }
 
+/* gamer section styles */
+
+.gamer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 15rem;
+  gap: 3.25rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+
+.gamer-right {
+  text-align: right;
+  width: 50%;
+}
+.gamer-left {
+  width: 50%;
+}
+
+.gamer-left img {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.gamer-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gamer-text,
+.purpose {
+  color: #534c64;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  padding-bottom: 2.3rem;
+  padding-top: 1.5rem;
+}
+
+.purpose span {
+  color: #534c64;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.8125rem;
+}
 /* responsive styles */
 
 /* small devices */
@@ -177,9 +231,10 @@ nav {
     flex-direction: column-reverse;
     margin: 0 auto;
     text-align: center;
-    padding: 0.5rem;
-    gap: 1.5rem;
-    margin-top: 4.88rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
   }
   .banner-right {
     width: 100%;
@@ -190,10 +245,10 @@ nav {
   }
   .banner-left {
     width: 100%;
-    text-align: center;
-    padding: 4rem 0;
+    padding: 4rem;
+    scale: 0.8;
+    margin-top: -35px;
   }
-
   .banner-title {
     scale: 0.8;
     line-height: normal;
@@ -218,5 +273,22 @@ nav {
     box-shadow: none;
     justify-content: space-between;
     gap: 4rem;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 0;
+  }
+
+  .banner-right {
+    width: 100%;
+  }
+
+  .banner-left {
+    width: 100%;
+    padding: 2rem 0;
+    scale: 0.8;
+    margin-top: -1rem;
   }
 }
