@@ -285,13 +285,6 @@ nav {
 
 /* category section styles */
 
-.category-holder {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
 .category-container {
   padding: 7.5rem 15rem;
   background: linear-gradient(
@@ -299,6 +292,13 @@ nav {
     rgba(255, 66, 165, 0.03) 0%,
     rgba(255, 66, 165, 0.03) 100%
   );
+}
+
+.category-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .category {
@@ -458,6 +458,8 @@ footer {
 
   .funny {
     padding: 1.5rem;
+    scale: 0.9;
+    margin-top: -8rem;
   }
 
   .video-card-container {
@@ -472,6 +474,7 @@ footer {
   .play {
     padding: 0;
     flex-direction: column;
+    margin-top: -4rem;
   }
 
   .play-left {
@@ -499,24 +502,28 @@ footer {
   }
 
   .category-container {
-    padding: 8rem 7rem;
+    padding: 2rem;
+    margin-top: -14rem;
+  }
+
+  .category-holder {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    scale: 0.5;
+    scale: 1;
+    gap: 0.5rem;
   }
 
   .category img {
-    width: 100%;
+    width: 20%;
   }
 
-  /* .category {
+  .category {
     padding: 0.2rem 0.4rem;
     gap: 0.2rem;
   }
   .category-name {
     font-size: 0.5rem;
-  } */
+  }
   footer {
     padding: 0;
   }
@@ -624,5 +631,19 @@ footer {
 
   .footer-container {
     scale: 0.9;
+  }
+
+  .category-container {
+    padding: 3rem;
+    margin-top: -15rem;
+  }
+
+  .category-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category {
+    scale: 0.8;
   }
 }
