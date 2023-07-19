@@ -419,7 +419,7 @@ footer {
     gap: 2rem;
     margin-top: 1.5rem;
     justify-content: center;
-    scale: .8;
+    scale: 0.8;
   }
 
   .nav-left {
@@ -665,7 +665,6 @@ footer {
 
   .category-container {
     padding: 3rem;
-    margin-top: -15rem;
   }
 
   .category-holder {
