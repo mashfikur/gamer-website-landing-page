@@ -416,9 +416,10 @@ footer {
     box-shadow: none;
     flex-direction: column;
     padding: 0;
-    gap: 2.85rem;
-    margin-top: 3rem;
+    gap: 2rem;
+    margin-top: 1.5rem;
     justify-content: center;
+    scale: .8;
   }
 
   .nav-left {
